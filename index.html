@@ -1,0 +1,159 @@
+
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOND PAGE</title>
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 20px;
+            background-color: #0e56e7;    
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(https://i.ibb.co/C3mK0xRT/Screenshot-20260103-025506-1.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            max-width: 800px;
+            width: 100%;
+        }
+
+        
+        .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.3s ease;
+        }
+
+        .card-link:hover {
+            transform: scale(1.02);
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+       
+        .card.right {
+            align-items: flex-end;
+            text-align: right;
+        }
+
+        .card h2 {
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .image-box {
+            position: relative;
+            width: 350px;
+            height: 200px;
+            border: 2px solid #ffffff33;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .image-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 10px;
+            opacity: 0.7;
+            transition: opacity 0.3s;
+        }
+
+        .card-link:hover .overlay {
+            opacity: 1;
+            background: rgba(0, 0, 0, 0);
+        }
+
+        .description {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            max-width: 350px;
+            line-height: 1.4;
+            opacity: 0.9;
+        }
+        .pera{
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+  
+  
+    
+    
+
+    <div class="container">
+
+        <a href="https://oceana.org/marine-mammals/" class="card-link">
+            <div class="card">
+                <h2>Marine Mammals</h2>
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1568430462989-44163eb1752f?auto=format&fit=crop&w=500&q=80" alt="Whale">
+                    <div class="overlay">CLICK</div>
+                </div>
+                <p class="description">There are so many types of marine mammals. Click if you want to see all of them.</p>
+            </div>
+        </a>
+
+        <a href="https://oceana.org/ocean-fishes/" class="card-link">
+            <div class="card right">
+                <h2>Sea Creatures Animal</h2>
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&w=500&q=80" alt="Fish">
+                    <div class="overlay">CLICK</div>
+                </div>
+                <p class="description">So many types of sea animals in our earth, click if you want to see all sea animals.</p>
+            </div>
+        </a>
+
+        <a href="https://ocean.si.edu/ocean-life/invertebrates/corals-and-coral-reefs" class="card-link">
+            <div class="card">
+                <h2>Sea Corals</h2>
+                <div class="image-box">
+                    <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=500&q=80" alt="Corals">
+                    <div class="overlay">CLICK</div>
+                </div>
+                <p class="description">So many types of coral in the deeper ocean, click if you want to see all of the types of corals.</p>
+            </div>
+        </a>
+
+    </div>
+
+</body>
+</html>
